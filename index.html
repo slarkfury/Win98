@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>98.js - Windows 98 Online</title>
+    <link href="layout.css" rel="stylesheet" type="text/css">
+    <link href="lib/os-gui/layout.css" rel="stylesheet" type="text/css">
+    <link href="lib/os-gui/windows-98.css" rel="stylesheet" type="text/css">
+    <link href="classic.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=LbWArJzeO7">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=LbWArJzeO7">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=LbWArJzeO7">
+    <link rel="manifest" href="/site.webmanifest?v=LbWArJzeO7">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=LbWArJzeO7" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico?v=LbWArJzeO7">
+    <meta name="apple-mobile-web-app-title" content="98.js">
+    <meta name="application-name" content="98.js">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#008080">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- For WayBack Machine, hopefully get it to save these resources -->
+    <link rel="prefetch" href="/filesystem-index.json">
+    <link rel="prefetch" href="/desktop/CREDITS.txt">
+    <link rel="prefetch" href="/programs/notepad/index.html">
+</head>
+
+<body>
+    <div>
+        <span class="title">Ethereum Yield Farmer: OS</span>
+        <div class="partners">
+            <div class="as-seen">
+                <h1>As seen on:</h1>
+                <a href="https://cointelegraph.com/press-releases/ethereum-yield-ethy-ready-to-launch-in-defi-zone"><img src="/images/cointelegraph.14dbc35b.png" alt="" class="ct-logo"></a>
+            </div>
+        </div>
+        <div class="app-container">
+            <div>
+                <div class="app-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA2CAYAAACBWxqaAAAB6klEQVRoQ+1Z7U3DMBSMZygLUYkVgBGQyjhUYgRgBJDKQjCDEQ0XiQvWPX8k4aXNn6px7Ly7e75nO6FzfgXn8XdnAEsrWK1AjDHWgAghVMVQ1fk7cHcAOOBwU8N/18Xnvv/9e/+73+Ypkq2AWwAIvJZxpdfuLk8JswJuAcwVOCuDuaFcSirgFsBSgbMSak4kFXALYO7ANy9vypiO7beHqz/rxEiBkwdgZRS0f8SeWVyoyE/b38rMpsBiAJA6F8GWk6nEZUZVgvP7uD/aP697pdiVhjngHsCmez2u65FrD5eKu7J2xThGZeZxP6mAewCpFMrNadbFyrhiXiqwGgC83octWpXIZZx9H26TmmHShVYHAExwgYJbccUsVQrvaa6AGwC7Q3++s3+0+TsUya0bmCOsoGJeutDJAsjN+VLmJ1Pg3wCwbmRK60It81IB9wAGhMKNrArUug17Yep0YrQnVm7kFoDV95l5MImKbfX75gq4AQDkPKlV6szNPOI0n8y5A8CuhBxOrUJxf+qc57khT6fhSm4BpJRgN+H9Qmu3Sa2RpQKrAcBA8N+6f1B73GG8qb9SYk64BTCqkD9rJ9s+bvxU7nfhbBdSgbEi6nluXxxAbsCtnze7UOsXtxrvDKAVk6XjnBUoZa5Vvy/P9+5G2NZJKwAAAABJRU5ErkJgggAA"
+                        alt="">
+                    <div class="label">Telegram</div>
+                </div>
+                <div class="app-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAKYElEQVR4Xu2dz4tWVRzG7wSl5q/AMXBVhMukNkUIZY00bgqiqNyZQUFWO01QhoRxBMmC8AfVRtyN486RUGNmUeGiH5DYH9DKIBVUcsYomOgPmOcJnzn33Pd9P+/23vPjfc73Oc/zPeeee4cafiAwwAgMDfB/56+DQAMBCIKBRgACDPTw8+chADEw0AhAgIEefv48BCAGBhoBCDDQw8+f73sCfDCzcCAZ5mNbh6Ly788uLCTtHx8ZKjpGtfFJsFmKskXBXYoOpnXUHmAIkI5g2fIQwOCLAmiAUnzKhrevHQJAgMjiQQBPsqp3YIE0/LXxqRocTdP/j0LUHmBygNohrtvHAmGBsEDd5mjWOxQAC6QQ6HkFcAE+ufVixiBT+s3Z0Y/VLZMj3xRt/0YzKsewNj7Xm22RwhQFrx9ygNoDDAF0iEKAwhSGAChAEmJYoAS9pmlQABQgDKGsOAqAAiQRhAIk6KEAFj1yAAtRdgMKgAIkEYQCJOihABY9FMBClN2QKsD2mVHZgZNbP3xX3fDW7NENyT7A9tkXZftuH6H0PoDDx+2zQIAsvm1pCFDWAkEAG4J1b4AAECCJwIHPAdwMhwXSFhELlNBvCcqiAChAEkYoAEmwjB+nkChAQr8lKIsCoABJGKEAKAAKkDCodFk3wx+buCS7MDz7p7w+tP6iXOd/4/QRuc5//KBuf93sHR1gZh/g+Bca4XVT+rzB3PLp31UNK+++9JW67izQsS91/4an9HmM2vsEnVcACAABSk6yEAAFQAFKMiytGwVAAdIYUuVRABQABSjJsLRuFAAFSGMIBRAIsArEKlBJgsV1owAoQBxEagIsWflS1G0JEK5DxwoQrtO78wDpPsPcgxf0PsDcaJYDhPsw7AMYlkCAbKMNAugA6/1VIBRAjjAEgABlH4XAAkWPomCBsEASAXKApcgkF68DC5RuhKEAKEBJjpIEkwSXjC8UAAVgGbQkw1zd6Qzv6l85lb3Xxz2P79p3z+un+wC2fXMe4W5zVu4T7Jw5KgnizmO4/rnzGqWT5OoKAAH0i7FcEuwCzB3IgQAOwcLXIQAEUCGGApiNLsdPLJA+kokCuAgqfB0FQAFQAIGAO3Tt+IkCoAAqRkiCzdudWQViFchNstF1LBAWCAuEBVoUAZZBy35nGAuEBWIjLPIwYWEsEBYIC4QFwgItggAbYWyERRrLoxAaPnIAcgBygGiKCQuTA5ADkAOQA5AD9GsOUHqGX3Fut3y//9vnzPv9zZHGUOCa2ucBmuHN8i+4/t23Xr9X6NqmV+V5AYuf6V/p7wsUzwEggP6ARekDMRCgchIMASCADEEUwIqkvAELZPDDAkmAsEDkADJAyAGyCbrBAmGBsEAFlzmxQFigZI7GAmGBsEAJg1xZLFBlC2QGyD0rVDwHcAJmvvOcPiyHAvS7AkAAVoEUAumZX6eAbqe1+EYYBIAAEGBxBLBAbgoLr5MDkAMkIVT63aHkAOQAdVeBSIKT+aFp2AfI8MMCZfjZ0lggLJANEnFD5y3QoAe4G9yurwKlj0vPLZ+WRyrnN2/v9HmBOAeAAJoCEAACuElSXu+6x3d/DgJAABcjEEAgkL4a0YIfnhfAAs0sHFAgp683RwH0VyJtgLsbIIBDSF8nByAHUAiQBIdvdkMBUABFsPStEawCZQJoS5MED3oSPGFmMONBYwU4mLVvI/x69iX32k+Dsg9gRzjMASCABBACuIeB9Iu9um+BIAAESCbZwu8NKp8DQAAIAAHU005a4sgBWAXq7VUgFAAFQAFQgMUQIAkmCS77LBDLoDrCeBQi0SdfdtdD++SzQlM3t8hKro+s0gS5NCm/D7Bz2eoNqoLTt56X9d8YWen/pLjDnbiyCuCObF6dlv1b9/3yqP/2vUAvHNHP+189K9sfDvvX+fcCQYA7WQ4AAfQE2WQf0o6XQd30AgEggFzFQQGwQCpA7Iu7sEDSYrsJGgUgB5AxQg7gKGSuY4GwQFgggQCrQOY7wSTBJMEKgRUsg7IMGriU6jnA2P4x2f1Ne76V1+ebabkPsGPtGrkPMDam239893cBvL6o2weYHNEv1nIt/HrkWXnL+Pi4vH7mgb/ke38Wro1G7/258slzun8Tun8nbh7q7SQYAmgLBAEgAArgpnlxHQXQ4GGBsEBYoGCCsUXdMigWCAukgmicHIAk2M4yWKB7hggLhAXCAt0zff5HQSyQBoll0D5fBnUccQR5b+MeV4W8/sxPY9E+wa6NH0Xtb/n5h6i8W8WZ/vyCrP+X27r9U7duy3X+Fc3Lcp3freOfPXpe9u/y7R/l9XSd34Ff3AK5DkAAjRAEyDa6XPxBALNTjAKgAI5E0XUUAAVQCGCByAEkQ8gBovm3wQJhgUiCMw5lpbFAWCAskECAZVD9ODMWKJuA+94CvfLbQbkPsO3vZfK8QLoK9MjYWjlCe3fsl9efXPN0NMJuH+DC/fp5/23/LJP7AE+seSrqH/sA5sVZqQJAAL0RBgEi/uaFS+cAEAACqCjFAmGB5CoQFiif5GUNKAA5AKtABVeBsEBYICyQQIBVIFaBCpscXT0WCAs00BbIsS8lyKP7H5JNPPbaO3Kf4PXVD0f7BKX3Adw6/9fz8zLJvXL6M7nOv3enJqjbB6i9zu/iq/oqkOsgBNAbYRDARZC+DgFQABQg41DZ0igAClAywlAAFAAFKMmwtG4UAAVIY6jT+wDuz0EACOBiJLmOBcICYYESBpUu6xTAvVt01Ub9ndx0H8B9X8C1n54HcMug54fuyn2Ayyc/hQClgzipHwJkFggC9Pk+AAqgH3aDABCg6KMQWCB9JJJHIRL/0zQNFggLFIaQLN7zq0BYICxQQhAIEC6DYoGwQAkBbVksEBbIBklwQ+cVwP03R5DDJydkFe559zO3/4jOCxw+Zdo37wVy///ErUNyDEvjY/sXfsfX1Z9ehwDmwAcE0AdiXACWfruza99dhwAQIFJIF2AQwCEUXi8t8SgAChCGaNniEIAcIIkwLBAWCAuUMKh2WRQABUhiEAVAAVCAhEG1y6IAKEASgygACoACJAyqXRYFQAGSGEQBUAAUIGFQ7bIoAAqQxCAKgAKgAAmDapdFAVCAJAZRABQABUgY1PWyTiFc/9OnGXet3bfg2lDX3fP+Sd3/la2NT9r/tHzPK4ADoPYAQwA3QnWvQwCDPwqgAUrxqRv+TQMBIMCBJAghQIJeC2WxQBrk2vi0EAKyCRQABUABarOwZPu1ZziS4JKjm9eNAqAAKEDOo+7WgAKQAygEUAAUAAXo7vyd9wwFQAFQgIBH6To3SXAAfgtFsUBYICxQC0Sr1gQWCAuEBQrohwXS4KX4BEOzJEWxQFggLNCSUIlKQKAHEeh7BejBMaHLLSIAAVoEm6a6hwAE6N6Y0KMWEYAALYJNU91DAAJ0b0zoUYsIQIAWwaap7iEAAbo3JvSoRQQgQItg01T3EIAA3RsTetQiAhCgRbBpqnsIQIDujQk9ahEBCNAi2DTVPQQgQPfGhB61iAAEaBFsmuoeAhCge2NCj1pE4F+CRGmTrnyOGgAAAABJRU5ErkJgggAA"
+                        alt="">
+                    <div class="label">Ethy Pre-Sale</div>
+                </div>
+                <div class="app-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAFVBMVEUAAACAgID///8AAADAwMCAgAD//wDIuPtlAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAHdElNRQfiBhgXBwzSK/XgAAAArElEQVQoz52RTQqDMBBGA71Aq/UADtr10NEDVJMDBE0u0Jj7H6EaJ/6E0kUfhMDj8W1G3CKCyWClxFTkqXhhIqo8EcBJBnKmg5KITsVMfxa1Gc7C+vdhQ0o1GYPHwvbUDIdCuQGswr2opyfULHii2cS/RT+1RaHa61Zo0np5sVCmWEEuxi58UiMX48MvVHvhwrTbixB4970I4kdxl8kGBaLQ8cKGiQcWlzUkFB97v1fQDl/ZqwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNFQyMzowNzoxMi0wNDowMOKdeHsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjRUMjM6MDc6MTItMDQ6MDCTwMDHAAAAAElFTkSuQmCC"
+                        alt="">
+                    <div class="label">Ethy Staking</div>
+                </div>
+                <div class="app-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEUAAAAA/wAAgAD///+i+qfwAAAAAXRSTlMAQObYZgAAAAFiS0dEAxEMTPIAAAAHdElNRQfiBhgXETIP0l2cAAAAPUlEQVQI12NgEGAAggAgZgQRrJGzFjCIhqUtgLDAYgwBLEBCgBXEZHVg4FqWGsDANXNqCIQFFgMSIFkWBgDFTQr2oXnYrQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNFQyMzoxNzo1MC0wNDowMDDGuGgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjRUMjM6MTc6NTAtMDQ6MDBBmwDUAAAAAElFTkSuQmCC"
+                        alt="">
+                    <div class="label">Swaps</div>
+                </div>
+                <div class="app-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGFBMVEUAAACAAIAAAACAgICAgAD//wDAwMD///9lJw0+AAAAAXRSTlMAQObYZgAAAAFiS0dEBxZhiOsAAAAHdElNRQfiBhgXChaa53LXAAABC0lEQVQ4y43UUW7DIAyAYdYbmHTvJDvBNql9rpQcYFLYAaopvQG9/rDBwaauVB759BuSB5x7Yb35JzDAZAefYMsAYAoGplBgSA0ehYNeWtAJBccY104oyPsx/mihYInzHKOaVoMVsSReBO/xgiqhXmmGBqH/hjrKh+4blnr4R1AB3vdCwSnIAPfnEmxBBgvv+xOCCH7Lfg4Q2pWOf8BBBvVb9yCDn/iEFVqA8F2Ffx8F2+T8VoWBgqt3/laFR1Ew5lG3e+JpMkBQwgGBkD0o0GQPKrC0wMFwFtICdxiFiECLCLTIQMo9yUA1KhCSdNAkdcEuqQ9Y0tV4A1DSY1Dky340DiMEZ4v9luj1D3eyfzWq5R0uAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjEwOjIyLTA0OjAwT0C7IQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzoxMDoyMi0wNDowMD4dA50AAAAASUVORK5CYII="
+                        alt="">
+                    <div class="label">Documentation</div>
+                </div>
+            </div>
+            <div>
+                <div class="app-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAADS0lEQVR4Xu2cMWtUQRDH7zpBMUXsbVJaWFkIEjnQz2BnH1tRUK46FQI2Fie2dmqbSoRrFAtBsPAzWJkignUkXWaevGGYnTfvJb90L7v7383/N7uzu+8u8xk/pQ7MS3un8xkAioMAAADwOfBgc3zc12K9mE8qqCY12BPjAeAL2Oa1AdDcUp8gAHx+hWtrw98tPrk0D2d3R73Mjnpw/1vzAeCKv3hlZkDcw5ACAEL2xRtbAO5t7ohO9BJFDggyAEDQwGhzAEQdDLYHQNBAb3Nt+PrZVyGxvfkrnnUOWL+RPW5/kOeGseWE0Z0DAOAN2cb1AdDYUK8cALyONa7fAWCs6Z0cYOQMcoABDACNI9orBwCvY43rA6CxoZacZbhur/f1Vg7otFfniOqcUH4OAIAVosnlAEg22JIHgOVQcjkAkg225AFgOZRcDoBkgy15AFgONS73Gt76HDC7clNIVr8vGPwcAAAZUgAofmMGAAD4kkz0Lmhsd0PnbwYoAvol/9CXcwAovh0FwFkHEN12Nj8HaMHic0H6DABA/yYDAMyA2m1o9dXE8DNAfW5HG9DB8dv52VCtb/E9dzMAACIkmAHMAHk9zBJkrZnB8r2tJ+J/Pbw/ui0UDxcXe3vwfj9g9utA3v9/udCrf+avIgBQ/D4AAABgCTrtwHK5FIZce/jZlWWs7wlrsZ8vb4lfrVYr8fz66EX6zvB0h4N2dtKxXoIA4Iq3eGUAjCwHMAPiQR1S0DNib+dRr97u92+95XqNP3j1UdT/8Ue2H3rN14MfPAfoAQAgFL/xxgCIexhSAEDIvnhjL4Cryy3R6eP7T8Xz9cs3egdFDlD2ACAexCEFAITsizcGQNzDpgoWEG8OGNuaP7pzgPdcAICm8d4VYwYkG2zJA8ByKLncui29tCPf6VrnAHKAExgAnIa1rg6A1o469QDgNCy7ugay//Z5712QHk/1fb/lT/n7AGuAALAcSi4HQLLBljwALIeSywGQbLAlDwDLoeRyACQbbMkDwHJo4HINZGr7fj3e0Z8D9IABMHDEA6DYcAAAINUBckCqvbY4AGyPUmsAINVeW3xyAOw/aVo1AFDMCwAAKHaguHtmAACKHSjunhkAgGIHirv/BzRuRI7W06tVAAAAAElFTkSuQmCC"
+                        alt="">
+                    <div class="label">Farm</div>
+                </div>
+                <div class="app-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAALVBMVEUAAAAAAAD///+AgID//wDAwMCWlpaAgAD//2b/AP+AAICsQKwAAP8AAIBAQKz+WemlAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAHdElNRQfiBBMBIzS+q6d7AAAAvUlEQVQoz2NgwAYE0PiM6AJCQAFGQUG4MKMykCni4goXEDITYGB0cQkXgCtIEwApKBeAKwAKSHS0lwsAzYEogAlIzjQECajBBARnTl6IIiA50wpVQHr3LqhAsqAgqoDhmcMoAskyZ2xRBIAK7qIKhMaiCbx7S1sBYACgCoQGogkYC0MELgIFCoECwoYGwBATfPdWGCggLL17I1ABA6OioqCgkSAYCykaAAVUQxFAmAEcZQhgAIoGYySALSUAADb+gVOUYK5PAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA0LTE5VDAxOjM1OjUyLTA0OjAwVJaudwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNC0xOVQwMTozNTo1Mi0wNDowMCXLFssAAAAASUVORK5CYII="
+                        alt="">
+                    <div class="label">Gov Lite</div>
+                </div>
+                <div class="app-icon"><img src="/images/ethys-big.6aee7cbb.png" alt="">
+                    <div class="label">ETHYS Pre-Sale</div>
+                </div>
+                <div class="app-icon"><img src="/images/bridge.cd1a3000.png" alt="">
+                    <div class="label">BSC Bridge</div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <button class="start-button icon-button">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAADS0lEQVR4Xu2cMWtUQRDH7zpBMUXsbVJaWFkIEjnQz2BnH1tRUK46FQI2Fie2dmqbSoRrFAtBsPAzWJkignUkXWaevGGYnTfvJb90L7v7383/N7uzu+8u8xk/pQ7MS3un8xkAioMAAADwOfBgc3zc12K9mE8qqCY12BPjAeAL2Oa1AdDcUp8gAHx+hWtrw98tPrk0D2d3R73Mjnpw/1vzAeCKv3hlZkDcw5ACAEL2xRtbAO5t7ohO9BJFDggyAEDQwGhzAEQdDLYHQNBAb3Nt+PrZVyGxvfkrnnUOWL+RPW5/kOeGseWE0Z0DAOAN2cb1AdDYUK8cALyONa7fAWCs6Z0cYOQMcoABDACNI9orBwCvY43rA6CxoZacZbhur/f1Vg7otFfniOqcUH4OAIAVosnlAEg22JIHgOVQcjkAkg225AFgOZRcDoBkgy15AFgONS73Gt76HDC7clNIVr8vGPwcAAAZUgAofmMGAAD4kkz0Lmhsd0PnbwYoAvol/9CXcwAovh0FwFkHEN12Nj8HaMHic0H6DABA/yYDAMyA2m1o9dXE8DNAfW5HG9DB8dv52VCtb/E9dzMAACIkmAHMAHk9zBJkrZnB8r2tJ+J/Pbw/ui0UDxcXe3vwfj9g9utA3v9/udCrf+avIgBQ/D4AAABgCTrtwHK5FIZce/jZlWWs7wlrsZ8vb4lfrVYr8fz66EX6zvB0h4N2dtKxXoIA4Iq3eGUAjCwHMAPiQR1S0DNib+dRr97u92+95XqNP3j1UdT/8Ue2H3rN14MfPAfoAQAgFL/xxgCIexhSAEDIvnhjL4Cryy3R6eP7T8Xz9cs3egdFDlD2ACAexCEFAITsizcGQNzDpgoWEG8OGNuaP7pzgPdcAICm8d4VYwYkG2zJA8ByKLncui29tCPf6VrnAHKAExgAnIa1rg6A1o469QDgNCy7ugay//Z5712QHk/1fb/lT/n7AGuAALAcSi4HQLLBljwALIeSywGQbLAlDwDLoeRyACQbbMkDwHJo4HINZGr7fj3e0Z8D9IABMHDEA6DYcAAAINUBckCqvbY4AGyPUmsAINVeW3xyAOw/aVo1AFDMCwAAKHaguHtmAACKHSjunhkAgGIHirv/BzRuRI7W06tVAAAAAElFTkSuQmCC" alt=""> ETHY 
+        </button>
+            <span class="divider"></span>
+            <button class="programs first"> About </button>
+            <button class="icon-button programs">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA2CAYAAACBWxqaAAAB6klEQVRoQ+1Z7U3DMBSMZygLUYkVgBGQyjhUYgRgBJDKQjCDEQ0XiQvWPX8k4aXNn6px7Ly7e75nO6FzfgXn8XdnAEsrWK1AjDHWgAghVMVQ1fk7cHcAOOBwU8N/18Xnvv/9e/+73+Ypkq2AWwAIvJZxpdfuLk8JswJuAcwVOCuDuaFcSirgFsBSgbMSak4kFXALYO7ANy9vypiO7beHqz/rxEiBkwdgZRS0f8SeWVyoyE/b38rMpsBiAJA6F8GWk6nEZUZVgvP7uD/aP697pdiVhjngHsCmez2u65FrD5eKu7J2xThGZeZxP6mAewCpFMrNadbFyrhiXiqwGgC83octWpXIZZx9H26TmmHShVYHAExwgYJbccUsVQrvaa6AGwC7Q3++s3+0+TsUya0bmCOsoGJeutDJAsjN+VLmJ1Pg3wCwbmRK60It81IB9wAGhMKNrArUug17Yep0YrQnVm7kFoDV95l5MImKbfX75gq4AQDkPKlV6szNPOI0n8y5A8CuhBxOrUJxf+qc57khT6fhSm4BpJRgN+H9Qmu3Sa2RpQKrAcBA8N+6f1B73GG8qb9SYk64BTCqkD9rJ9s+bvxU7nfhbBdSgbEi6nluXxxAbsCtnze7UOsXtxrvDKAVk6XjnBUoZa5Vvy/P9+5G2NZJKwAAAABJRU5ErkJgggAA" alt=""> Telegram 
+        </button>
+            <button class="programs icon-button">
+            <img src="data:image/png;base64,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"
+                    alt=""> Pre-Sale 
+        </button>
+            <div class="tray">
+                <button>Connect Wallet</button>
+                <span>0% tax</span></div>
+            <div class="start-menu">
+                <div class="brand">Ethereum Yield OS</div>
+                <button class="programs icon-button">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAADS0lEQVR4Xu2cMWtUQRDH7zpBMUXsbVJaWFkIEjnQz2BnH1tRUK46FQI2Fie2dmqbSoRrFAtBsPAzWJkignUkXWaevGGYnTfvJb90L7v7383/N7uzu+8u8xk/pQ7MS3un8xkAioMAAADwOfBgc3zc12K9mE8qqCY12BPjAeAL2Oa1AdDcUp8gAHx+hWtrw98tPrk0D2d3R73Mjnpw/1vzAeCKv3hlZkDcw5ACAEL2xRtbAO5t7ohO9BJFDggyAEDQwGhzAEQdDLYHQNBAb3Nt+PrZVyGxvfkrnnUOWL+RPW5/kOeGseWE0Z0DAOAN2cb1AdDYUK8cALyONa7fAWCs6Z0cYOQMcoABDACNI9orBwCvY43rA6CxoZacZbhur/f1Vg7otFfniOqcUH4OAIAVosnlAEg22JIHgOVQcjkAkg225AFgOZRcDoBkgy15AFgONS73Gt76HDC7clNIVr8vGPwcAAAZUgAofmMGAAD4kkz0Lmhsd0PnbwYoAvol/9CXcwAovh0FwFkHEN12Nj8HaMHic0H6DABA/yYDAMyA2m1o9dXE8DNAfW5HG9DB8dv52VCtb/E9dzMAACIkmAHMAHk9zBJkrZnB8r2tJ+J/Pbw/ui0UDxcXe3vwfj9g9utA3v9/udCrf+avIgBQ/D4AAABgCTrtwHK5FIZce/jZlWWs7wlrsZ8vb4lfrVYr8fz66EX6zvB0h4N2dtKxXoIA4Iq3eGUAjCwHMAPiQR1S0DNib+dRr97u92+95XqNP3j1UdT/8Ue2H3rN14MfPAfoAQAgFL/xxgCIexhSAEDIvnhjL4Cryy3R6eP7T8Xz9cs3egdFDlD2ACAexCEFAITsizcGQNzDpgoWEG8OGNuaP7pzgPdcAICm8d4VYwYkG2zJA8ByKLncui29tCPf6VrnAHKAExgAnIa1rg6A1o469QDgNCy7ugay//Z5712QHk/1fb/lT/n7AGuAALAcSi4HQLLBljwALIeSywGQbLAlDwDLoeRyACQbbMkDwHJo4HINZGr7fj3e0Z8D9IABMHDEA6DYcAAAINUBckCqvbY4AGyPUmsAINVeW3xyAOw/aVo1AFDMCwAAKHaguHtmAACKHSjunhkAgGIHirv/BzRuRI7W06tVAAAAAElFTkSuQmCC" alt=""> Farms (EVaults) 
+            </button>
+                <button class="programs icon-button">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAFVBMVEUAAACAgID///8AAADAwMCAgAD//wDIuPtlAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAHdElNRQfiBhgXBwzSK/XgAAAArElEQVQoz52RTQqDMBBGA71Aq/UADtr10NEDVJMDBE0u0Jj7H6EaJ/6E0kUfhMDj8W1G3CKCyWClxFTkqXhhIqo8EcBJBnKmg5KITsVMfxa1Gc7C+vdhQ0o1GYPHwvbUDIdCuQGswr2opyfULHii2cS/RT+1RaHa61Zo0np5sVCmWEEuxi58UiMX48MvVHvhwrTbixB4970I4kdxl8kGBaLQ8cKGiQcWlzUkFB97v1fQDl/ZqwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNFQyMzowNzoxMi0wNDowMOKdeHsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjRUMjM6MDc6MTItMDQ6MDCTwMDHAAAAAElFTkSuQmCC"
+                            alt=""> Staking 
+            </button>
+                <button class="programs icon-button">
+                <img src="data:image/png;base64,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" alt=""> Pre-Sale 
+            </button>
+                <button class="programs icon-button">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAARVBMVEUEBAStqZD//8z////MzJkzzP///5kzmf9mZgAAmcxmzP+Z//8AZpkAM5kWFhYzZpkzZv+ZmWYEBAQAAIAzZswiIiIMDAwhGLk4AAAAAXRSTlMAQObYZgAAAAFiS0dEAxEMTPIAAAAHdElNRQfiBBMBIzMgzzLYAAAB50lEQVRIx62Vi5KDIAxFhWB5lCrVbv//UzcJDwVpdWc2zHSm03O8Cagdhn8rsatLtIRS8kyJtBp53dQNpPqmCAEwjloXPhqmpqy1mQdwWlc8GtAa9m59vjzRtDaeDdMm+Ee5/KiddsqpOy6Zu2oivEchXj7yWJGPBkA7xePxELF7l3kuKWNX2FNjDGKaDxWKAeq5NDysU2jK3V02DgL2s86TpZa2um9GR9DrTMZG5iVlJwED/DoHNA68o4SOoF8o6Hka3Vh11E+gABIsG/UM3QQKCJSAxk9rYAIeXCVQQLCc4I4ZEqgjUQvaxwTXMQD3tCPkBFcZlEA8dWTqkUvCweh1hMKWwEbhb8T3hF1CZeQJTC9B29bABMkTHI/tFXY8GXPqKDbUCrRLOIEtj4+L923hTSUoPoedwUvTBIl/vtuHwYejgc9C5k0jKLqXskEOfzqV+fbxpIiQjORYHQhPfBOQpvDs5BUYT3wbwAYpxbHcDb6EP/DRiI732gFseJ8fBiOeqvwlKLXh7z6PhhFVMf0Zj4p5lsIvZlm+4VxLrjfXGb43OeEPAjVnpss4zgyS57hI47FJvqnNucM00MuLd5b36mvvieaTE3l7T4VkJP77bi1LVGQZ4vT08NiA+xLXDjs5qZoffgF/cS8pp99ajAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNC0xOVQwMTozNTo1MS0wNDowMGV+tOoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDQtMTlUMDE6MzU6NTEtMDQ6MDAUIwxWAAAAAElFTkSuQmCC"
+                                alt=""> Transaction Watcher 
+            </button>
+                <hr>
+                <button class="programs icon-button">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAACAgIDAwMAAgID///8AgAAAAP+AAAAAAAD/AAAAAIBSZDZVAAAAAXRSTlMAQObYZgAAAAFiS0dEBI9o2VEAAAAHdElNRQfiBhgXETDh3DywAAABh0lEQVQ4y23TsWrDMBAGYPsNqmCC6CbZBa8NNHuEGrq24FK81tbgsXTJ5pQMmUsgT+Bg/JQ9SSdbqn2Q5f/y54QjR5Edoj8wd1Ew8d2KRISnafpI/JzELOGEb8Sb4IUvKyK0PGRpAeMJhEaei20NMu1JJEqhdOV1gq9RdKNoR7j+jqLnY4TD4duXrh0b14tEoQBl7zes/GgoEGLbAKEAT9AoWwRhGlLmAPW0JEmkuPhQlvZcq0Ti5Lij6yfYO/jcQqN0P+WDqovOLIl5ADel8FhxamCPUDZK1baxsbDH5YNSTdBwcFNN0y3Bu1LDYIDMGwaIDAAKN9MgMmyslW1AHsJxbRvwp4VwPt4PQ29vSFL5cHqxwCVLqsrBkZ52FCHz4XzaEWoO5cA8rBy+T/6Dfr65zgF6c2+50MCBRKbzEAQI5gCtByCYE9rbV4BnmawyziXmhLYORCYBGHFgbsKZa+FiBigLYIVPQMf3RssEU+6EzXIUNs+tsIXcCFvKtbDFHIQt5yBB/ge5pdMZ3n2ecAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNFQyMzoxNzo0OC0wNDowMM+D9pEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjRUMjM6MTc6NDgtMDQ6MDC+3k4tAAAAAElFTkSuQmCC" alt=""> News Feed
+            </button>
+                <button class="programs icon-button">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGFBMVEUAAACAAIAAAACAgICAgAD//wDAwMD///9lJw0+AAAAAXRSTlMAQObYZgAAAAFiS0dEBxZhiOsAAAAHdElNRQfiBhgXChaa53LXAAABC0lEQVQ4y43UUW7DIAyAYdYbmHTvJDvBNql9rpQcYFLYAaopvQG9/rDBwaauVB759BuSB5x7Yb35JzDAZAefYMsAYAoGplBgSA0ehYNeWtAJBccY104oyPsx/mihYInzHKOaVoMVsSReBO/xgiqhXmmGBqH/hjrKh+4blnr4R1AB3vdCwSnIAPfnEmxBBgvv+xOCCH7Lfg4Q2pWOf8BBBvVb9yCDn/iEFVqA8F2Ffx8F2+T8VoWBgqt3/laFR1Ew5lG3e+JpMkBQwgGBkD0o0GQPKrC0wMFwFtICdxiFiECLCLTIQMo9yUA1KhCSdNAkdcEuqQ9Y0tV4A1DSY1Dky340DiMEZ4v9luj1D3eyfzWq5R0uAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjEwOjIyLTA0OjAwT0C7IQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzoxMDoyMi0wNDowMD4dA50AAAAASUVORK5CYII="
+                                    alt=""> Documentation </button><button class="programs icon-button"> About 
+             </button>
+                <hr>
+                <button class="icon-button programs">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA2CAYAAACBWxqaAAAB6klEQVRoQ+1Z7U3DMBSMZygLUYkVgBGQyjhUYgRgBJDKQjCDEQ0XiQvWPX8k4aXNn6px7Ly7e75nO6FzfgXn8XdnAEsrWK1AjDHWgAghVMVQ1fk7cHcAOOBwU8N/18Xnvv/9e/+73+Ypkq2AWwAIvJZxpdfuLk8JswJuAcwVOCuDuaFcSirgFsBSgbMSak4kFXALYO7ANy9vypiO7beHqz/rxEiBkwdgZRS0f8SeWVyoyE/b38rMpsBiAJA6F8GWk6nEZUZVgvP7uD/aP697pdiVhjngHsCmez2u65FrD5eKu7J2xThGZeZxP6mAewCpFMrNadbFyrhiXiqwGgC83octWpXIZZx9H26TmmHShVYHAExwgYJbccUsVQrvaa6AGwC7Q3++s3+0+TsUya0bmCOsoGJeutDJAsjN+VLmJ1Pg3wCwbmRK60It81IB9wAGhMKNrArUug17Yep0YrQnVm7kFoDV95l5MImKbfX75gq4AQDkPKlV6szNPOI0n8y5A8CuhBxOrUJxf+qc57khT6fhSm4BpJRgN+H9Qmu3Sa2RpQKrAcBA8N+6f1B73GG8qb9SYk64BTCqkD9rJ9s+bvxU7nfhbBdSgbEi6nluXxxAbsCtnze7UOsXtxrvDKAVk6XjnBUoZa5Vvy/P9+5G2NZJKwAAAABJRU5ErkJgggAA" alt=""> Telegram 
+            </button>
+                <button class="icon-button programs">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUAAACAgID///8AAP/AwMAAAAAA/wAAgAD/AACAAACwuvFFAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAHdElNRQfiBhoAMBd7KeFGAAABGklEQVQ4y7XSy3HCMBCAYfmQO+uxC2BjGkgqELO+2zNSC1RAESkgBWcfehhZHOMT839aWQic+69ngDcwYl8GxL6M2JcBP7+6wgNdkTeIrPE08C20bE0HjiJr26+o0g4App3WtnvbqRkAJG873aDplHcieO1+tDPtVEX7FO1MgYpYJxLBG38A2koHXqeySoetrs+yS1cYF90nyRKkG9yv0pNYh/3CQBPS45nEOgR/ESB+zc+vVusQyCuIUF0vMBuYlM5bbQlEaocwuwyEhw77VsFj7SD/hgKHgahXMp0gzna5LUQwmPSqKkTIYJeYgXsBlQQxH8o5+S1ZDA7dfZgoHHsW+eKvvcycepZzT9LpJr2u0u0i/c7yprfPH0vqbpxhW5yrAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI2VDAwOjQ4OjIzLTA0OjAwULPRIwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNlQwMDo0ODoyMy0wNDowMCHuaZ8AAAAASUVORK5CYII="
+                                        alt=""> Twitter 
+            </button>
+                <button class="icon-button programs">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAADS0lEQVR4Xu2cMWtUQRDH7zpBMUXsbVJaWFkIEjnQz2BnH1tRUK46FQI2Fie2dmqbSoRrFAtBsPAzWJkignUkXWaevGGYnTfvJb90L7v7383/N7uzu+8u8xk/pQ7MS3un8xkAioMAAADwOfBgc3zc12K9mE8qqCY12BPjAeAL2Oa1AdDcUp8gAHx+hWtrw98tPrk0D2d3R73Mjnpw/1vzAeCKv3hlZkDcw5ACAEL2xRtbAO5t7ohO9BJFDggyAEDQwGhzAEQdDLYHQNBAb3Nt+PrZVyGxvfkrnnUOWL+RPW5/kOeGseWE0Z0DAOAN2cb1AdDYUK8cALyONa7fAWCs6Z0cYOQMcoABDACNI9orBwCvY43rA6CxoZacZbhur/f1Vg7otFfniOqcUH4OAIAVosnlAEg22JIHgOVQcjkAkg225AFgOZRcDoBkgy15AFgONS73Gt76HDC7clNIVr8vGPwcAAAZUgAofmMGAAD4kkz0Lmhsd0PnbwYoAvol/9CXcwAovh0FwFkHEN12Nj8HaMHic0H6DABA/yYDAMyA2m1o9dXE8DNAfW5HG9DB8dv52VCtb/E9dzMAACIkmAHMAHk9zBJkrZnB8r2tJ+J/Pbw/ui0UDxcXe3vwfj9g9utA3v9/udCrf+avIgBQ/D4AAABgCTrtwHK5FIZce/jZlWWs7wlrsZ8vb4lfrVYr8fz66EX6zvB0h4N2dtKxXoIA4Iq3eGUAjCwHMAPiQR1S0DNib+dRr97u92+95XqNP3j1UdT/8Ue2H3rN14MfPAfoAQAgFL/xxgCIexhSAEDIvnhjL4Cryy3R6eP7T8Xz9cs3egdFDlD2ACAexCEFAITsizcGQNzDpgoWEG8OGNuaP7pzgPdcAICm8d4VYwYkG2zJA8ByKLncui29tCPf6VrnAHKAExgAnIa1rg6A1o469QDgNCy7ugay//Z5712QHk/1fb/lT/n7AGuAALAcSi4HQLLBljwALIeSywGQbLAlDwDLoeRyACQbbMkDwHJo4HINZGr7fj3e0Z8D9IABMHDEA6DYcAAAINUBckCqvbY4AGyPUmsAINVeW3xyAOw/aVo1AFDMCwAAKHaguHtmAACKHSjunhkAgGIHirv/BzRuRI7W06tVAAAAAElFTkSuQmCC" alt=""> Ethynstien3D 
+            </button>
+                <hr>
+                <button>Connect Wallet</button>
+            </div>
+        </div>
+        <div class="info">
+            <img src="/images/ethy-big.4aae2aec.png" alt="" id="spinner">
+            <div class="ascii">
+                ███████╗████████╗██╗░░██╗███████╗██████╗░███████╗██╗░░░██╗███╗░░░███╗
+                ██╔════╝╚══██╔══╝██║░░██║██╔════╝██╔══██╗██╔════╝██║░░░██║████╗░████║
+                █████╗░░░░░██║░░░███████║█████╗░░██████╔╝█████╗░░██║░░░██║██╔████╔██║
+                ██╔══╝░░░░░██║░░░██╔══██║██╔══╝░░██╔══██╗██╔══╝░░██║░░░██║██║╚██╔╝██║
+                ███████╗░░░██║░░░██║░░██║███████╗██║░░██║███████╗╚██████╔╝██║░╚═╝░██║
+                ╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝░╚═════╝░╚═╝░░░░░╚═╝
+                
+                ██╗░░░██╗██╗███████╗██╗░░░░░██████╗░
+                ╚██╗░██╔╝██║██╔════╝██║░░░░░██╔══██╗
+                ░╚████╔╝░██║█████╗░░██║░░░░░██║░░██║
+                ░░╚██╔╝░░██║██╔══╝░░██║░░░░░██║░░██║
+                ░░░██║░░░██║███████╗███████╗██████╔╝
+                ░░░╚═╝░░░╚═╝╚══════╝╚══════╝╚═════╝░
+                    </div>
+             ETHY is Ethereum's most powerful yield farming coin. ETHY's vault smart-contract executes strategies to maximize APY, reward holders, and Punish weak-hands.
+        </div>
+    </div>
+    <script src="lib/jquery.min.js"></script>
+    <!-- <script src="lib/browserfs.js"></script>
+    <script src="lib/konami.js"></script>
+    <script src="lib/os-gui/parse-theme.js"></script>
+    <script src="lib/os-gui/$MenuBar.js"></script>
+    <script src="src/3d-fun.js"></script>
+    <script src="src/helpers.js"></script>
+    <script src="src/filesystem-setup.js"></script>
+    <script src="src/$Window.js"></script>
+    <script src="src/$IframeWindow.js"></script>
+    <script src="src/Task.js"></script>
+    <script src="src/$taskbar-time.js"></script> -->
+    <script src="src/$start-menu.js"></script>
+    <!-- <script src="src/$FolderView.js"></script>
+    <script src="src/$FolderViewIcon.js"></script>
+    <script src="src/visualizer-overlay.js"></script>
+    <script src="src/programs.js"></script> -->
+
+    <!-- TODO: DRY -->
+    <svg style="position: absolute; pointer-events: none; bottom: 100%;">
+			<defs>
+				<filter id="disabled-inset-filter" x="0" y="0" width="1px" height="1px">
+					<feColorMatrix
+						in="SourceGraphic"
+						type="matrix"
+						values="
+							1 0 0 0 0
+							0 1 0 0 0
+							0 0 1 0 0
+							-1000 -1000 -1000 1 0
+						"
+						result="black-parts-isolated"
+					/>
+					<feFlood result="shadow-color" flood-color="var(--ButtonShadow)"/>
+					<feFlood result="hilight-color" flood-color="var(--ButtonHilight)"/>
+					<feOffset in="black-parts-isolated" dx="1" dy="1" result="offset"/>
+					<feComposite in="hilight-color" in2="offset" operator="in" result="hilight-colored-offset"/>
+					<feComposite in="shadow-color" in2="black-parts-isolated" operator="in" result="shadow-colored"/>
+					<feMerge>
+						<feMergeNode in="hilight-colored-offset"/>
+						<feMergeNode in="shadow-colored"/>
+					</feMerge>
+				</filter>
+			</defs>
+		</svg>
+</body>
+
+</html>
